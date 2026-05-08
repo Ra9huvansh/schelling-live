@@ -477,10 +477,47 @@
   @keyframes spin { to { transform: rotate(360deg); } }
 
   @media (max-width: 600px) {
-    .location-grid { grid-template-columns: repeat(2, 1fr); }
-    .stats-row { grid-template-columns: repeat(3, 1fr); gap: 8px; }
-    .stat-value { font-size: 26px; }
-    .bar-label { width: 100px; font-size: 11px; }
+    .container { padding: 0 16px; }
+
+    #screen-question { padding: 40px 0 32px; }
+    .eyebrow { margin-bottom: 16px; }
+    .headline { margin-bottom: 14px; }
+    .subline { margin-bottom: 32px; font-size: 13px; }
+
+    .city-bar { gap: 8px; margin-bottom: 24px; }
+    .city-btn { font-size: 11px; padding: 7px 14px; }
+
+    .location-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 8px;
+      margin-bottom: 28px;
+    }
+    .location-card { padding: 16px 14px; border-radius: 12px; }
+    .loc-emoji { font-size: 20px; margin-bottom: 6px; }
+    .loc-name { font-size: 12px; }
+
+    .submit-btn { width: 100%; justify-content: center; padding: 16px 24px; }
+
+    #screen-results { padding: 40px 0 48px; }
+    .result-header { margin-bottom: 32px; }
+
+    .stats-row { grid-template-columns: repeat(3, 1fr); gap: 8px; margin-bottom: 24px; }
+    .stat-card { padding: 16px 12px; border-radius: 12px; }
+    .stat-value { font-size: 22px; }
+    .stat-label { font-size: 9px; letter-spacing: 0.08em; }
+
+    .histogram-section { padding: 20px 16px; border-radius: 14px; }
+    .histogram-title { margin-bottom: 18px; }
+    .bar-row { gap: 8px; margin-bottom: 12px; }
+    .bar-label { width: 90px; font-size: 11px; }
+    .bar-pct { font-size: 11px; width: 28px; }
+
+    .insight-card { padding: 20px 16px; border-radius: 12px; }
+    .insight-text { font-size: 14px; }
+
+    .share-row { flex-direction: column; }
+    .share-btn { width: 100%; text-align: center; padding: 14px; }
+    .play-again { width: 100%; text-align: center; margin-top: 24px; }
   }
 </style>
 </head>
